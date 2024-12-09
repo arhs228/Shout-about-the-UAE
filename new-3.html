@@ -1,0 +1,196 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving to the UAE</title>
+    <style>
+      /* Import League Spartan and Lato fonts from Google Fonts */
+      @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Lato:wght@400&display=swap');
+
+      /* Basic body styling */
+      body {
+        font-family: 'Lato', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #bfbfbf; /* Gray background for the entire page */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+      }
+
+      /* Navigation Bar Styling */
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #3498db;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      li a {
+        display: flex;
+        align-items: center;
+        color: black;
+        text-align: center;
+        padding: 8px 16px;
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+        font-size: 17px;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #ffffff;
+      }
+
+      .active {
+        background-color: #2980b9; /* Set background color for active link */
+        color: white; /* Set text color for active link */
+      }
+
+      /* Style for the standalone circular image in navigation */
+      .nav-icon {
+        width: 50px; /* Larger width */
+        height: 50px; /* Larger height */
+        border-radius: 50%;
+      }
+
+      /* Centered Content Styling */
+      .center-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-top: 20px; /* Reduced space between nav bar and title */
+        text-align: center; /* Center-align content inside */
+      }
+
+      /* Title Styling with Arrows */
+      .title {
+        display: inline-block;
+        padding: 10px 20px;
+        color: black;
+        font-weight: bold;  
+        font-size: 47px; /* Set font size to 47px */
+        font-family: 'League Spartan', sans-serif; /* Set font to League Spartan */
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        position: relative;
+      }
+
+      /* Style for the arrows */
+      .title::before, .title::after {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: black;
+      }
+
+      /* Left arrow */
+      .title::before {
+        content: "\2190"; /* Unicode for left arrow */
+        left: -30px; /* Adjust position as needed */
+      }
+
+      /* Right arrow */
+      .title::after {
+        content: "\2192"; /* Unicode for right arrow */
+        right: -30px; /* Adjust position as needed */
+      }
+
+      /* Image Styling for Row Layout */
+      .image-container {
+        display: flex;
+        flex-direction: row; /* Arrange images in a row */
+        justify-content: center;
+        gap: 10px; /* Space between images */
+        margin-top: 20px; /* Space between title and images */
+      }
+
+      img {
+        width: 200px; /* Increased width for all images */
+        height: 200px; /* Increased height for all images */
+        border-radius: 8px;
+      }
+
+      /* Line Styling Under Images */
+      .separator-line {
+        width: 80%; /* Adjust width as needed */
+        border: 1px solid black;
+        margin-top: 15px; /* Space between images and line */
+      }
+
+      /* Bottom-right image and text container */
+      .bottom-right-image {
+        display: flex;
+        align-items: center; /* Align image and text side-by-side */
+        justify-content: flex-end; /* Align content to the right */
+        width: 100%; /* Full width to push content to the far right */
+        padding-right: 10%; /* Adjust to align with separator line */
+        margin-top: 10px;
+      }
+
+      /* Placeholder Text Styling with Larger Right Margin */
+      .placeholder-text {
+        font-family: 'Lato', sans-serif;
+        font-size: 18px; /* Web-appropriate font size */
+        color: #333;
+        margin-right: 30px; /* Increased right margin */
+        margin-left: 30px;  /* Increased left margin */
+        margin-top: 20px;   /* Additional top margin */
+        margin-bottom: 20px; /* Additional bottom margin */
+        max-width: 600px; /* Limit width for better readability */
+      }
+
+      /* Maintain size for the specific image */
+      .bottom-right-image img:last-child {
+        width: 250px; /* Increased width for the last image */
+        height: 250px; /* Increased height for the last image */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <ul>
+      <!-- Standalone Circular Image in Navigation Bar -->
+      <img src="https://tse3.mm.bing.net/th?id=OIP.zY4Ys-Xvuj8lpMI_Lih5fQHaFj&pid=Api&P=0&h=180" alt="Navigation Icon" class="nav-icon"> <!-- Increased size to 50px -->
+
+      <!-- Navigation Links -->
+      <li><a class="active" href="index.html">Home Page</a></li>
+      <li><a href="new-2.html">Identifying The Problem</a></li>
+      <li><a href="new.html">Education</a></li>
+      <li><a href="new-4.html">Housing</a></li>
+      <li><a href="new-5.html">Contact Us</a></li>
+    </ul>
+
+    <!-- Centered Content -->
+    <div class="center-container">
+      <!-- Title Section with Arrows -->
+      <div class="title">Food</div>
+
+      <!-- Image Row -->
+      <div class="image-container">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.Aho-pwmuDBBKGjEJ7JTt2QHaEe&pid=Api&P=0&h=180" alt="Food">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.2mtvB2bMSzR0SPkKKzJDJAHaEK&pid=Api&P=0&h=180" alt="Calculating Food">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.X_53VSOExAe240O83_EE5AHaE7&pid=Api&P=0&h=180" alt="Food Inflation">
+      </div>
+
+      <!-- Line Under Images -->
+      <hr class="separator-line">
+
+      <!-- Text and Image Side-by-Side at Bottom Right -->
+      <div class="bottom-right-image">
+        <p class="placeholder-text">For newcomers in the UAE, managing food costs amidst a high cost of living can be challenging, but several strategies make it easier to keep expenses under control. Shopping smart is essential: local supermarkets like Carrefour, Lulu Hypermarket, and Union Coop offer frequent promotions on staples, especially if you buy in bulk. Choosing regional brands instead of imported products can significantly reduce your grocery bills without sacrificing quality. Fresh fruits and vegetables are also often more affordable at local outdoor markets, which offer seasonal produce at competitive prices.
+
+          Dining out can be pricey, so opting for traditional Emirati or Middle Eastern food spots, like shawarma or falafel shops, is a budget-friendly way to enjoy local cuisine. Cooking at home is usually cheaper and lets you experiment with local ingredients, while meal-prepping can help reduce food waste and make weekday meals convenient and affordable. Many supermarkets offer discount sections with near-expiry items, which are ideal for immediate use.
+        </p>
+        <img src="https://cdn.globalpropertyguide.com/assets/img/uae-house-prices-5.gif" alt="Rising Food Prices Through the Years">
+      </div>
+    </div>
+  </body>
+</html>
